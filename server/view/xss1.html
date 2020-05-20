@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    		
+</body>
+    <script type="text/javascript">
+        var s=location.search;          
+          s=s.substring(1,s.length);  
+        var url="";
+        if(s.indexOf("url=")>-1){       //判断URL是否为空 
+          var pos=s.indexOf("url=")+4;  //过滤掉"url="字符
+          url=s.substring(pos,s.length); //得到地址栏里的url参数
+        }else{
+          url="url参数为空";
+        }
+        document.write("url: <a href='"+url+"'>"+url+"</a>");  //输出
+    </script>
+
+</html>
