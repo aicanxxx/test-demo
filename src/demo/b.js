@@ -20,8 +20,7 @@ export default obj;
 import stone from '../middlewares/stone'
 
 export default function () {
-	let stoneData = Object.assign({}, stone.base64);
-	this.stone = stoneData;
+	console.log('test');
 }
 // 转码
 "use strict";
@@ -38,16 +37,14 @@ function _interopRequireDefault(obj) {
 }
 
 function _default() {
-	var stoneData = Object.assign({}, _stone.default.base64);
-	this.stone = stoneData;
+	console.log('test');
 }
 
 // CommonJs代码
 var stone = require('../middlewares/stone');
 
 module.exports = function () {
-	let stoneData = Object.assign({}, stone.base64);
-	this.stone = stoneData;
+	console.log('test');
 }
 // 转码
 "use strict";
@@ -64,8 +61,7 @@ function _interopRequireDefault(obj) {
 }
 
 function _default() {
-	var stoneData = Object.assign({}, _stone.default.base64);
-	this.stone = stoneData;
+	console.log('test');
 }
 // export default {
 // 	a,
