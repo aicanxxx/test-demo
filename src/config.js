@@ -1,5 +1,5 @@
 import Home from "./pages/Home.jsx";
-import Count from "./pages/Count.jsx";
+import Count from "./pages/Count.tsx";
 // import Layout from "./pages/Layout.jsx";
 import Test from "./pages/Test.jsx";
 import Xss from "./pages/Xss.jsx";
@@ -9,6 +9,7 @@ import RenderProp from './pages/RenderProp.jsx';
 import DeepClone from './pages/DeepClone.jsx'
 import TestHooks from './pages/TestHooks.jsx'
 import TestPromise from './pages/TestPromise.jsx'
+import Bfc from './pages/Bfc.tsx';
 
 export default [
     {
@@ -51,5 +52,9 @@ export default [
     {
         path : '/promise',
         component: TestPromise
+    },
+    {
+        path : '/bfc',
+        component: Bfc
     }
 ]

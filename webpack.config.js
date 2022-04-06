@@ -33,6 +33,11 @@ module.exports = {
                 loader: 'babel-loader'
             },
             {
+                test: /\.(ts|tsx)$/,
+                exclude: /node_modules/,
+                loader: 'ts-loader'
+            },
+            {
                 test:/\.scss$/,
                 use:[
                     'style-loader',
